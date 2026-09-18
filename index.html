@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONO — Minimal Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="logo">MONO</span>
+      <nav class="cart-indicator" aria-live="polite">
+        <button id="cartBtn" class="cart-btn" type="button" aria-label="ตะกร้าสินค้า">
+          🛍 <span id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <h1>สินค้าคัดสรร<br>เรียบ ง่าย ใช้งานได้จริง</h1>
+      <p class="hero-sub">ดีไซน์มินิมอล เลือกแล้วกดซื้อได้ทันที</p>
+    </section>
+
+    <section class="products wrap" id="productGrid">
+      <!-- product cards injected by script.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© 2026 MONO Shop — Demo Store</div>
+  </footer>
+
+  <!-- Order Summary Popup -->
+  <div class="overlay" id="overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="ปิด">×</button>
+      <h2 id="modalTitle">สรุปรายการสั่งซื้อ</h2>
+
+      <div class="modal-product">
+        <div class="modal-thumb" id="modalThumb"></div>
+        <div class="modal-info">
+          <div class="modal-name" id="modalName"></div>
+          <div class="modal-price" id="modalUnitPrice"></div>
+        </div>
+      </div>
+
+      <div class="qty-row">
+        <span>จำนวน</span>
+        <div class="qty-control">
+          <button type="button" id="qtyMinus" aria-label="ลดจำนวน">−</button>
+          <span id="qtyValue">1</span>
+          <button type="button" id="qtyPlus" aria-label="เพิ่มจำนวน">+</button>
+        </div>
+      </div>
+
+      <div class="summary-line">
+        <span>ราคารวม</span>
+        <strong id="modalTotal">฿0</strong>
+      </div>
+
+      <button class="btn-confirm" id="confirmBtn" type="button">ยืนยันคำสั่งซื้อ</button>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div class="toast" id="toast" hidden>สั่งซื้อสำเร็จ ขอบคุณที่อุดหนุนค่ะ 🎉</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
