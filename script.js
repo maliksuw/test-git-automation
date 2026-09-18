@@ -3,8 +3,8 @@ const PRODUCTS = [
   { id: "p2", name: "Linen Tote Bag", desc: "กระเป๋าผ้าลินิน ทนทาน ใส่ของจุใจ", price: 450, emoji: "👜" },
   { id: "p3", name: "Desk Lamp", desc: "โคมไฟตั้งโต๊ะ ปรับความสว่างได้", price: 890, emoji: "💡" },
   { id: "p4", name: "Notebook Set", desc: "สมุดโน้ตปกอ่อน 3 เล่ม กระดาษเกรดพรีเมียม", price: 320, emoji: "📓" },
-  { id: "p5", name: "Wool Scarf", desc: "ผ้าพันคอขนแกะ นุ่ม อบอุ่น", price: 690, emoji: "🧣" },
-  { id: "p6", name: "Wooden Tray", desc: "ถาดไม้เนื้อแข็ง เข้ามุมทุกพื้นที่", price: 550, emoji: "🪵" },
+  { id: "p5", name: "Wool Scarf", desc: "ผ้าพันคอขนแกะ นุ่ม อบอุ่น", price: 690, emoji: "🧤" },
+  { id: "p6", name: "Wooden Tray", desc: "ถาดไม้เนื้อแข็ง เข้ามุมทุกพื้นที่", price: 550, emoji: "📦" },
 ];
 
 const THB = (n) => "฿" + n.toLocaleString("th-TH");
